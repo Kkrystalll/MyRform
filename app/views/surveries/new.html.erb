@@ -1,0 +1,14 @@
+<%= form_with do |form| %>
+  <div>
+    <%= form.text_field :title, placeholder: "問卷名稱" %>
+  </div>
+  <div>
+    <%= form.text_area :description, placeholder: "說明" %>
+  </div>
+  <div>
+    <%= form.text_field :title, placeholder: "請輸入問題" %>
+    <%= form.select :question_type, ["單選","多選","問答"] %><br>
+    <%= form.text_field :answer, placeholder: "請輸入選項" %>
+    <%= form.button "X" %>
+  </div>
+<% end %>
